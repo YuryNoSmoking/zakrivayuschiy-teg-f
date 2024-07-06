@@ -17,4 +17,10 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: 'PressStart2P';
+}
+
+
+.floppy:hover {
+  color: red;
 }
