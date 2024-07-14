@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
-    <meta name="color-scheme" content="dark light" />
+    <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
@@ -18,6 +18,8 @@
   </head>
   <body class="page">
     <header class="header">
+      <h1 class="header_title">&lt;/HTML&gt;</h1>
+      <h2 class="header_subtitle">закрывающий тег</h2>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -45,9 +47,25 @@
       </nav>
     </header>
     <main>
-      <svg >
+      <section class="study-part">
+        <h3 class="section-title">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h3>
+        <div class="picture">
+          <h4 class="logo">&lt;/HTML&gt;</h4>
+        </div>
+
+        <p class="content">
+          Это было самое начало пути. На этом этапе важно было проникнуться
+          основами и настроиться на учёбу. И, возможно, подумать, как новые
+          знания могут повлиять на ваше будущее
+        </p>
+        <p class="content">Место для ваших воспоминаний о начале обучения.</p>
+        <button>Like</button>
+      </section>
+      <!-- <svg>
         <use href="./svg/floppy.svg#floppy" class="floppy"></use>
-      </svg>
+      </svg> -->
     </main>
     <script src="./scripts/like.js"></script>
   </body>

@@ -15,12 +15,78 @@
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
-  font-family: 'PressStart2P';
+  font-family: "PressStart2P";
+  inline-size: min(100%, 696px);
+  margin: auto;
+  min-inline-size: 375px;
 }
 
+.header_title {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  padding: 120px 14px 20px;
+}
+.header_subtitle {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  text-transform: uppercase;
+  padding: 0 80px 25px;
+}
+
+.header {
+  border: 2px solid var(--accent-color);
+  text-align: center;
+  margin-top: 102px;
+  background-color: black;
+}
+
+.theme-menu__list {
+  display: grid;
+  gap: 14px;
+  padding-bottom: 25px;
+}
 
 .floppy:hover {
   color: red;
+}
+
+.study-part {
+  margin-block-start: 100px;
+  border: 2px solid var(--accent-color);
+  background-color: black;
+  font-family: Inter-Variable;
+  font-size: 18px;
+}
+
+.section-title {
+  font-weight: 765;
+  border-bottom: 2px solid var(--accent-color);
+  line-height: 21.78px;
+  padding: 3px 10px;
+}
+
+.picture {
+  /* block-size: min(375px, 696px);
+  inline-size: max(375px, 696px); */
+  width: 696px;
+  width: clamp(375px, 100rem, 696px);
+  height: 696px;
+  min-block-size: 375px;
+  background-image: url(/images/van.png);
+  border-bottom: 2px solid var(--accent-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content {
+  font-weight: 465;
+  padding: 25px 25px 27px;
+}
+
+.logo {
+  font-family: "PressStart2P";
+  opacity: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px;
+  font-size: 14px;
 }
