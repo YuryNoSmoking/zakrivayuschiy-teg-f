@@ -16,19 +16,9 @@
 
 .page {
   font-family: "PressStart2P";
-  inline-size: min(100%, 696px);
+  max-inline-size: 696px;
   margin: auto;
   min-inline-size: 375px;
-}
-
-.header_title {
-  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  padding: 120px 14px 20px;
-}
-.header_subtitle {
-  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  text-transform: uppercase;
-  padding: 0 80px 25px;
 }
 
 .header {
@@ -37,6 +27,22 @@
   margin-top: 102px;
   background-color: black;
 }
+
+.header__title {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  padding-top: clamp(120px, 10vw, 136px);
+  padding-bottom: 20px;
+  padding-left: 14px;
+  padding-right: 14px;
+
+}
+.header__subtitle {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  text-transform: uppercase;
+  padding: 0 80px 25px;
+}
+
+
 
 .theme-menu__list {
   display: grid;
@@ -48,7 +54,7 @@
   color: red;
 }
 
-.study-part {
+.card {
   margin-block-start: 100px;
   border: 2px solid var(--accent-color);
   background-color: black;
@@ -56,30 +62,43 @@
   font-size: 18px;
 }
 
-.section-title {
-  font-weight: 765;
+.card-title {
+  font-weight: 785;
+  font-size: 18px;
   border-bottom: 2px solid var(--accent-color);
   line-height: 21.78px;
   padding: 3px 10px;
 }
 
+.picture-cover {
+  width: 100%;
+  max-width: 696px;
+  min-width: 375px;
+  position: relative;
+}
+.picture-cover::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
 .picture {
-  /* block-size: min(375px, 696px);
-  inline-size: max(375px, 696px); */
-  width: 696px;
-  width: clamp(375px, 100rem, 696px);
-  height: 696px;
-  min-block-size: 375px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url(/images/van.png);
   border-bottom: 2px solid var(--accent-color);
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
 }
 
 .content {
   font-weight: 465;
   padding: 25px 25px 27px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .logo {
@@ -89,4 +108,10 @@
   justify-content: flex-end;
   padding: 25px;
   font-size: 14px;
+}
+
+.card__icon-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: var(--accent-color) solid 1px;
 }

@@ -8,12 +8,14 @@
   background-color: var(--bg-color);
   color: var(--accent-color);
   background-image: var(--bg-image-dark);
+  background-size: cover;
 }
 
 :root.theme-light {
     background-color: var(--bg-color);
     color: var(--accent-color);
     background-image: var(--bg-image);
+    background-size: cover;
   }
 
 @media (prefers-color-scheme: dark) {
@@ -21,6 +23,7 @@
     background-color: var(--bg-color);
     color: var(--accent-color);
     background-image: var(--bg-image-dark);
+    background-size: cover;
   }
 }
 
@@ -29,5 +32,6 @@
       background-color: var(--bg-color);
       color: var(--accent-color);
       background-image: var(--bg-image);
+      background-size: cover;
     }
   }
