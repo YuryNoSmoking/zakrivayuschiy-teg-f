@@ -25,6 +25,9 @@
     background-image: var(--bg-image-dark);
     background-size: cover;
   }
+  .header {
+    background-color: black;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -33,5 +36,8 @@
       color: var(--accent-color);
       background-image: var(--bg-image);
       background-size: cover;
+    }
+    .header {
+      background-color: white;
     }
   }

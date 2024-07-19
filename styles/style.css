@@ -25,7 +25,6 @@
   border: 2px solid var(--accent-color);
   text-align: center;
   margin-top: 102px;
-  background-color: black;
 }
 
 .header__title {
@@ -34,20 +33,43 @@
   padding-bottom: 20px;
   padding-left: 14px;
   padding-right: 14px;
-
 }
+
 .header__subtitle {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-transform: uppercase;
   padding: 0 80px 25px;
 }
-
-
+.theme-menu {
+  display: flex;
+  justify-content: center;
+}
 
 .theme-menu__list {
   display: grid;
   gap: 14px;
   padding-bottom: 25px;
+  width: 126px;
+  justify-items: center;
+}
+
+.theme-menu__button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-family: Press Start 2P;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
 }
 
 .floppy:hover {
@@ -112,6 +134,7 @@
 
 .card__icon-button {
   cursor: pointer;
-  background-color: transparent;
+  background-color: grey;
   border: var(--accent-color) solid 1px;
+  inline-size: 169px;
 }
