@@ -5,81 +5,53 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-dark {
-  background-color: var(--bg-color-dark);
-  color: var(--accent-color-dark);
-  background-image: var(--bg-image-dark);
-  background-size: cover;
-
-  .header {
-    background-color: var(--bg-color-dark);
-    border: 2px solid var(--accent-color-dark);
-  }
-  .card {
-    border: 2px solid var(--accent-color-dark);
-  }
-  .card__picture {
-    border-top: 2px solid var(--accent-color-dark);
-    border-bottom: 2px solid var(--accent-color-dark);
-  }
+  --bg-color: #000;
+  --accent-color: #00cc14;
+  --bg-image: repeating-linear-gradient(
+      to right,
+      #000 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #007f0c, #004306);
 }
 
 :root.theme-light {
-  background-color: var(--bg-color-light);
-  color: var(--accent-color-light);
-  background-image: var(--bg-image);
-  background-size: cover;
-
-  .header {
-    background-color: var(--bg-color-light);
-    border: 2px solid var(--accent-color-light);
-  }
-  .card {
-    border: 2px solid var(--accent-color-light);
-    background-color: var(--bg-color-light);
-  }
-  .card__picture {
-    border-top: 2px solid var(--accent-color-light);
-    border-bottom: 2px solid var(--accent-color-light);
-  }
+  --bg-color: white;
+  --accent-color: black;
+  --bg-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--bg-color-dark);
-    color: var(--accent-color-dark);
-    background-image: var(--bg-image-dark);
-    background-size: cover;
-  }
-  .header {
-    background-color: var(--bg-color-dark);
-    border: 2px solid var(--accent-color-dark);
-  }
-  .card {
-    border: 2px solid var(--accent-color-dark);
-  }
-  .card__picture {
-    border-top: 2px solid var(--accent-color-dark);
-    border-bottom: 2px solid var(--accent-color-dark);
+  :root {
+    --bg-color: #000;
+    --accent-color: #00cc14;
+    --bg-image: repeating-linear-gradient(
+        to right,
+        #000 0px 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
+      repeating-linear-gradient(to bottom, #007f0c, #004306);
   }
 }
 
 @media (prefers-color-scheme: light) {
-  body {
-    background-color: var(--bg-color-light);
-    color: var(--accent-color-light);
-    background-image: var(--bg-image);
-    background-size: cover;
-  }
-  .header {
-    background-color: var(--bg-color-light);
-    border: 2px solid var(--accent-color-light);
-  }
-  .card {
-    border: 2px solid var(--accent-color-light);
-    background-color: var(--bg-color-light);
-  }
-  .card__picture {
-    border-top: 2px solid var(--accent-color-light);
-    border-bottom: 2px solid var(--accent-color-light);
+  :root {
+    --bg-color: white;
+    --accent-color: black;
+    --bg-image: repeating-linear-gradient(
+        to right,
+        #d3d3d3 0px 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
+      repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   }
 }

@@ -16,15 +16,28 @@
 
 .page {
   font-family: "PressStart2P";
-  max-inline-size: 696px;
-  margin: auto;
-  min-inline-size: 375px;
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+  background-image: var(--bg-image);
+  background-size: cover;
+  padding-top: 100px;
 }
 
 .header {
-  border: 2px solid var(--accent-color-dark);
+  border: 2px solid var(--accent-color);
   text-align: center;
-  margin-top: 102px;
+  margin-top: 100px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
+  margin: auto;
+  max-inline-size: var(--max-width);
+  min-inline-size: var(--min-width);
+}
+
+main {
+  margin: auto;
+  max-inline-size: var(--max-width);
+  min-inline-size: var(--min-width);
 }
 
 .header__title {
@@ -74,9 +87,10 @@
 
 .card {
   margin-block-start: 100px;
-  background-color: black;
+  background-color: var(--bg-color);
   font-family: Inter-Variable;
   font-size: 18px;
+  border: 2px solid var(--accent-color);
 }
 
 .card__title {
@@ -91,6 +105,8 @@
   max-width: 696px;
   min-width: 375px;
   position: relative;
+  border-top: 2px solid var(--accent-color);
+  border-bottom: 2px solid var(--accent-color);
 }
 .card__picture::before {
   content: "";
@@ -123,11 +139,65 @@
   justify-content: flex-end;
   padding: 25px;
   font-size: 14px;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-    1px 1px 0 #fff;
+  text-shadow: -1px -1px 0 var(--bg-color), 1px -1px 0 var(--bg-color), -1px 1px 0 var(--bg-color),
+    1px 1px 0 var(--bg-color);
+}
+
+.card__like-button-conteiner {
+  display: flex;
+  justify-content: end;
+}
+
+.card__like-button {
+  cursor: pointer;
+  block-size: 38px;
+  inline-size: 169px;
+  margin: 25px;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  border: 0;
+  padding: 0;
+}
+.card__heart {
+  inline-size: 39px;
+}
+
+.button__text {
+  font-family: "PressStart2P";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 36px;
+  border: 2px solid var(--accent-color);
+  display: block;
+  flex-grow: 1;
+}
+
+.card__icon-button-conteiner {
+  display: flex;
+  justify-content: center;
 }
 
 .card__icon-button {
+  background-color: var(--bg-color);
+  font-family: "PressStart2P";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12.6px;
+  border: 2px solid var(--accent-color);
+  margin-top: 52px;
+  margin-bottom: 100px;
+  inline-size: 335px;
+  min-block-size: 51px;
   cursor: pointer;
-  inline-size: 169px;
+ display: flex;
+ align-items: center;
+}
+
+.floppy {
+  inline-size: 21px;
+}
+
+.card__icon-button > .button__text {
+  border: 0;
 }

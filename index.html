@@ -60,14 +60,27 @@
         знания могут повлиять на ваше будущее.
       </p>
       <p class="card__content">Место для ваших воспоминаний о начале обучения.</p>
-      <button class="card__icon-button" type="button">
-        <span>
-          <svg viewBox="0 0 27 24">
-             <use href="/svg/like-icon.svg#like-icon">
-          </svg>
-          Like
-        </span></button>
+     
+     
+     
+     <div class="card__like-button-conteiner">
+      <button class="card__like-button" type="button">
+        <svg viewBox="0 0 35 24" class="card__heart">
+          <use href="./svg/like-icon.svg#like-icon">
+        </svg>
+          <span class="button__text">Like</span>
+        </button>
+
+      </div>
     </section>
+    <div class="card__icon-button-conteiner">
+<button class="card__icon-button" type="button">
+  <svg viewBox="0 0 40 40" class="floppy">
+    <use href="./svg/floppy.svg#floppy">
+  </svg>
+  <span class="button__text">Сохранить на память</span>
+</button>
+</div>
   </main>
   <script src="./scripts/like.js"></script>
 </body>
