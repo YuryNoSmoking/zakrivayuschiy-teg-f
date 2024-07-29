@@ -62,8 +62,27 @@ main {
   display: grid;
   gap: 14px;
   padding-bottom: 25px;
-  width: 126px;
-  justify-items: center;
+  justify-items: start;
+}
+
+.theme-menu__item::after{
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  margin-top: -1px;
+  background-color: var(--accent-color);
+  transition: width 300ms;
+}
+
+.theme-menu__item:hover::after {
+width: 100%;
+}
+
+.theme-menu__item:hover {
+  opacity: 0.6;
+  transition: 300ms ease;
+  
 }
 
 .theme-menu__button {
@@ -75,14 +94,20 @@ main {
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+  position: relative;
 }
 
 .theme-menu__button:disabled {
   opacity: 0.6;
+  pointer-events: none;
 }
 
 .theme-menu__button:disabled::before {
   content: "▶";
+  position: absolute;
+  left: -25px;
+  animation: arrow 500ms infinite ease-in-out;
+  animation-direction: alternate;
 }
 
 .card {
@@ -159,6 +184,15 @@ main {
   border: 0;
   padding: 0;
 }
+
+.card__like-button:focus {
+  outline: none ;
+}
+
+.card__like-button:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--accent-color);
+}
+
 .card__heart {
   inline-size: 39px;
 }
@@ -194,10 +228,27 @@ main {
  align-items: center;
 }
 
+.card__icon-button:focus {
+  outline: none;
+}
+.card__icon-button:focus-visible {
+  box-shadow: 2px 2px 0 0 var(--accent-color);
+}
+
+
 .floppy {
   inline-size: 21px;
 }
 
 .card__icon-button > .button__text {
   border: 0;
+}
+
+@keyframes arrow {
+  from {
+    left: -10px;
+  }
+  to {
+    left: -14px;
+  }
 }
