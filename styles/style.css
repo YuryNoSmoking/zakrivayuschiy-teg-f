@@ -65,7 +65,7 @@ main {
   justify-items: start;
 }
 
-.theme-menu__item::after{
+/* .theme-menu__item::after{
   content: "";
   display: block;
   width: 0%;
@@ -73,29 +73,48 @@ main {
   margin-top: -1px;
   background-color: var(--accent-color);
   transition: width 300ms;
-}
+} */
 
-.theme-menu__item:hover::after {
+/* .theme-menu__item:hover::after {
 width: 100%;
-}
+} */
 
-.theme-menu__item:hover {
+/* .theme-menu__item:hover {
   opacity: 0.6;
   transition: 300ms ease;
-  
-}
+} */
 
 .theme-menu__button {
   cursor: pointer;
   background-color: transparent;
   border: none;
   text-transform: uppercase;
-  font-family: Press Start 2P;
   font-size: 14px;
   font-weight: 400;
-  line-height: 14px;
   position: relative;
 }
+
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+.theme-menu__button::after {
+  content: "";
+  display: block;
+  height: 3px;
+  margin-top: -1px;
+  background-color: var(--accent-color);
+  transform: scaleX(0);
+  transition: 300ms;
+ 
+}
+
+.theme-menu__button:focus-visible::after {
+  content: "";
+  transform: scaleX(1);
+}
+
 
 .theme-menu__button:disabled {
   opacity: 0.6;
