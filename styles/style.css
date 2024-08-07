@@ -64,25 +64,6 @@ main {
   justify-items: start;
 }
 
-/* .theme-menu__item::after{
-  content: "";
-  display: block;
-  width: 0%;
-  height: 3px;
-  margin-top: -1px;
-  background-color: var(--accent-color);
-  transition: width 300ms;
-} */
-
-/* .theme-menu__item:hover::after {
-width: 100%;
-} */
-
-/* .theme-menu__item:hover {
-  opacity: 0.6;
-  transition: 300ms ease;
-} */
-
 .theme-menu__button {
   cursor: pointer;
   background-color: transparent;
@@ -92,7 +73,6 @@ width: 100%;
   font-weight: 400;
   position: relative;
 }
-
 
 .theme-menu__button:focus {
   outline: none;
@@ -106,14 +86,12 @@ width: 100%;
   background-color: var(--accent-color);
   transform: scaleX(0);
   transition: 300ms;
- 
 }
 
 .theme-menu__button:focus-visible::after {
   content: "";
   transform: scaleX(1);
 }
-
 
 .theme-menu__button:disabled {
   opacity: 0.6;
@@ -131,9 +109,15 @@ width: 100%;
 .card {
   margin-block-start: 100px;
   background-color: var(--bg-color);
-  font-family: Inter-Variable;
+  font-family: "Inter-Variable", sans-serif;
   font-size: 18px;
   border: 2px solid var(--accent-color);
+}
+
+@supports (font-variation-settings: normal) {
+  .card {
+    font-family: "Inter-Variable", sans-serif;
+  }
 }
 
 .card__title {
@@ -182,8 +166,8 @@ width: 100%;
   justify-content: flex-end;
   padding: 25px;
   font-size: 14px;
-  text-shadow: -1px -1px 0 var(--bg-color), 1px -1px 0 var(--bg-color), -1px 1px 0 var(--bg-color),
-    1px 1px 0 var(--bg-color);
+  text-shadow: -1px -1px 0 var(--bg-color), 1px -1px 0 var(--bg-color),
+    -1px 1px 0 var(--bg-color), 1px 1px 0 var(--bg-color);
 }
 
 .card__like-button-conteiner {
@@ -204,7 +188,7 @@ width: 100%;
 }
 
 .card__like-button:focus {
-  outline: none ;
+  outline: none;
 }
 
 .card__like-button:focus-visible {
@@ -242,8 +226,8 @@ width: 100%;
   inline-size: 335px;
   min-block-size: 51px;
   cursor: pointer;
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .card__icon-button:focus {
@@ -252,7 +236,6 @@ width: 100%;
 .card__icon-button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
-
 
 .floppy {
   inline-size: 21px;
