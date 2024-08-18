@@ -109,14 +109,14 @@ main {
 .card {
   margin-block-start: 100px;
   background-color: var(--bg-color);
-  font-family: "Inter-Variable", sans-serif;
+  font-family: inter, sans-serif;
   font-size: 18px;
   border: 2px solid var(--accent-color);
 }
 
 @supports (font-variation-settings: normal) {
   .card {
-    font-family: "Inter-Variable", sans-serif;
+    font-family: sans-serif;
   }
 }
 
