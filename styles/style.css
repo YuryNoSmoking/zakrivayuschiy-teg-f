@@ -15,7 +15,7 @@
 */
 
 .page {
-  font-family: "PressStart2P";
+  font-family:  var(--font, Arial, Helvetica, sans-serif);
   background-color: var(--bg-color);
   color: var(--accent-color);
   background-image: var(--bg-image);
@@ -24,6 +24,7 @@
 }
 
 .header {
+  font-family: var(--accent-font);
   border: 2px solid var(--accent-color);
   text-align: center;
   margin-top: 100px;
@@ -109,14 +110,14 @@ main {
 .card {
   margin-block-start: 100px;
   background-color: var(--bg-color);
-  font-family: inter, sans-serif;
+  /* font-family: inter, sans-serif; */
   font-size: 18px;
   border: 2px solid var(--accent-color);
 }
 
 @supports (font-variation-settings: normal) {
   .card {
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
   }
 }
 
@@ -160,7 +161,7 @@ main {
 }
 
 .card__logo {
-  font-family: "PressStart2P";
+  font-family: var(--accent-font);
   opacity: 50%;
   display: flex;
   justify-content: flex-end;
@@ -200,7 +201,7 @@ main {
 }
 
 .button__text {
-  font-family: "PressStart2P";
+  font-family: var(--accent-font);
   font-size: 14px;
   font-weight: 400;
   line-height: 36px;
@@ -216,7 +217,7 @@ main {
 
 .card__icon-button {
   background-color: var(--bg-color);
-  font-family: "PressStart2P";
+  font-family: var(--accent-font);
   font-size: 14px;
   font-weight: 400;
   line-height: 12.6px;
