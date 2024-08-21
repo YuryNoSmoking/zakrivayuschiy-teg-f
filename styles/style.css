@@ -15,20 +15,21 @@
 */
 
 .page {
-  font-family:  var(--font, Arial, Helvetica, sans-serif);
-  background-color: var(--bg-color);
-  color: var(--accent-color);
-  background-image: var(--bg-image);
+  font-family: var(--font, Arial, Helvetica, sans-serif);
+  font-variation-settings: 'wght' var(--font-weight, 400);
+  background-color: var(--bg-color, #fff);
+  color: var(--accent-color, #000);
+  background-image: var(--bg-image, #fff);
   background-size: cover;
   padding-top: 100px;
 }
 
 .header {
   font-family: var(--accent-font);
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--accent-color, #000);
   text-align: center;
   margin-top: 100px;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color, #fff);
   margin: auto;
   max-inline-size: var(--max-width);
   min-inline-size: var(--min-width);
@@ -71,7 +72,6 @@ main {
   border: none;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 400;
   position: relative;
 }
 
@@ -84,7 +84,7 @@ main {
   display: block;
   height: 3px;
   margin-top: -1px;
-  background-color: var(--accent-color);
+  background-color: var(--accent-color, #000);
   transform: scaleX(0);
   transition: 300ms;
 }
@@ -109,20 +109,14 @@ main {
 
 .card {
   margin-block-start: 100px;
-  background-color: var(--bg-color);
-  /* font-family: inter, sans-serif; */
+  background-color: var(--bg-color, #fff);
   font-size: 18px;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--accent-color, #000);
 }
 
-@supports (font-variation-settings: normal) {
-  .card {
-    /* font-family: sans-serif; */
-  }
-}
 
 .card__title {
-  font-weight: 785;
+  font-variation-settings: 'wght' var(--font-weight-title, 700);
   font-size: 18px;
   line-height: 21.78px;
   padding: 3px 10px;
@@ -154,7 +148,6 @@ main {
 }
 
 .card__content {
-  font-weight: 465;
   padding: 25px 25px 27px;
   font-size: 18px;
   line-height: 21px;
@@ -203,7 +196,6 @@ main {
 .button__text {
   font-family: var(--accent-font);
   font-size: 14px;
-  font-weight: 400;
   line-height: 36px;
   border: 2px solid var(--accent-color);
   display: block;
@@ -219,7 +211,6 @@ main {
   background-color: var(--bg-color);
   font-family: var(--accent-font);
   font-size: 14px;
-  font-weight: 400;
   line-height: 12.6px;
   border: 2px solid var(--accent-color);
   margin-top: 52px;

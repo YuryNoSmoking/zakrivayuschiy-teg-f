@@ -7,11 +7,10 @@
 :root.theme-dark {
   --bg-color: #000;
   --accent-color: #00cc14;
-  --bg-image: repeating-linear-gradient(
-      to right,
-      #000 0px 2px,
-      transparent 2px 4px
-    ),
+  --font-weight: 465;
+  --font-weight-title: 785;
+  --bg-image: 
+    repeating-linear-gradient(to right,#000 0px 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #007f0c, #004306);
 }
@@ -19,11 +18,10 @@
 :root.theme-light {
   --bg-color: white;
   --accent-color: black;
-  --bg-image: repeating-linear-gradient(
-      to right,
-      #d3d3d3 0px 2px,
-      transparent 2px 4px
-    ),
+  --font-weight: 400;
+  --font-weight-title: 700;
+  --bg-image: 
+    repeating-linear-gradient(to right,#d3d3d3 0px 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
 }
@@ -32,11 +30,10 @@
   :root {
     --bg-color: #000;
     --accent-color: #00cc14;
-    --bg-image: repeating-linear-gradient(
-        to right,
-        #000 0px 2px,
-        transparent 2px 4px
-      ),
+    --font-weight: 465;
+    --font-weight-title: 785;
+    --bg-image: 
+      repeating-linear-gradient(to right, #000 0px 2px, transparent 2px 4px),
       repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
       repeating-linear-gradient(to bottom, #007f0c, #004306);
   }
@@ -46,11 +43,10 @@
   :root {
     --bg-color: white;
     --accent-color: black;
-    --bg-image: repeating-linear-gradient(
-        to right,
-        #d3d3d3 0px 2px,
-        transparent 2px 4px
-      ),
+    --font-weight: 400;
+    --font-weight-title: 700;
+    --bg-image: 
+      repeating-linear-gradient(to right,#d3d3d3 0px 2px, transparent 2px 4px),
       repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
       repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   }
