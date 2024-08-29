@@ -107,6 +107,30 @@ main {
   animation-direction: alternate;
 }
 
+
+
+.card2__image {
+  width: 100%; /* Изображение займет 100% ширины контейнера */
+  max-width: 696px; /* Максимальная ширина 696 пикселей */
+  height: auto; /* Сохраняет пропорции изображения */
+}
+
+@media (max-width: 375px) {
+  .card2__image {
+    width: 100%; /* На мобильных устройствах изображение займет всю ширину */
+    max-width: 100%; /* Убирает ограничение ширины */
+  }
+}
+
+
+
+
+
+
+
+
+
+
 .card {
   margin-block-start: 100px;
   background-color: var(--bg-color, #fff);
