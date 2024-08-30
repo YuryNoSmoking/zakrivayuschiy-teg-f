@@ -108,6 +108,8 @@
   animation-direction: alternate;
 }
 
+/* ************************ new card ****************** */
+
 .card {
   margin-block-start: 100px;
   background-color: var(--bg-color, #fff);
@@ -115,14 +117,54 @@
   border: 2px solid var(--accent-color, #000);
 }
 
+.card__image-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card__logo {
+  position: absolute;
+  font-family: var(--accent-font);
+  opacity: 50%;
+  padding: 25px;
+  font-size: 14px;
+  text-shadow: -1px -1px 0 var(--bg-color), 1px -1px 0 var(--bg-color),
+    -1px 1px 0 var(--bg-color), 1px 1px 0 var(--bg-color);
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid var(--accent-color, #000);
+}
+
 .card__title {
   font-variation-settings: "wght" var(--font-weight-title, 700);
   font-size: 18px;
   line-height: 21.78px;
   padding: 3px 10px;
+  border-bottom: 2px solid var(--accent-color, #000);
 }
 
-.card__picture {
+.card__content {
+  padding: 25px 25px 27px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+
+
+/* @media (max-width: 375px) {
+  .card2__image {
+    width: 100%; 
+   max-width: 100%; 
+  }
+}  */
+
+/* ************************ new card ****************** */
+
+/* .card__picture {
   width: 100%;
   max-width: 696px;
   min-width: 375px;
@@ -145,27 +187,7 @@
   background-image: url(/images/van.png);
   background-size: cover;
   background-position: center;
-}
-
-.card__content {
-  padding: 25px 25px 27px;
-  font-size: 18px;
-  line-height: 21px;
-}
-
-.card__logo {
-  font-family: var(--accent-font);
-  opacity: 50%;
-  display: flex;
-  justify-content: flex-end;
-  padding: 25px;
-  font-size: 14px;
-  text-shadow: 
-  -1px -1px 0 var(--bg-color),
-   1px -1px 0 var(--bg-color),
-  -1px 1px 0 var(--bg-color),
-   1px 1px 0 var(--bg-color);
-}
+} */
 
 .card__like-button-conteiner {
   display: flex;
