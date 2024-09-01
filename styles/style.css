@@ -79,7 +79,6 @@
 
 .theme-menu__button:hover {
   opacity: 0.6;
-
 }
 
 .theme-menu__button:focus {
@@ -93,7 +92,8 @@
   margin-top: -1px;
   background-color: var(--accent-color, #000);
   transform: scaleX(0);
-  transition: 300ms;
+  transform-origin: 0% 50%;
+  transition:  transform 300ms;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -137,7 +137,7 @@
   font-size: 14px;
   text-shadow: -1px -1px 0 var(--bg-color), 1px -1px 0 var(--bg-color),
     -1px 1px 0 var(--bg-color), 1px 1px 0 var(--bg-color);
-    mix-blend-mode: hard-light;
+  mix-blend-mode: hard-light;
 }
 
 .card__image {
@@ -159,8 +159,6 @@
   font-size: 18px;
   line-height: 21px;
 }
-
-
 
 /* @media (max-width: 375px) {
   .card2__image {
