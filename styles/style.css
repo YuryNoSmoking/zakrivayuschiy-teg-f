@@ -74,6 +74,12 @@
   text-transform: uppercase;
   font-size: 14px;
   position: relative;
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+
 }
 
 .theme-menu__button:focus {
@@ -131,6 +137,7 @@
   font-size: 14px;
   text-shadow: -1px -1px 0 var(--bg-color), 1px -1px 0 var(--bg-color),
     -1px 1px 0 var(--bg-color), 1px 1px 0 var(--bg-color);
+    mix-blend-mode: hard-light;
 }
 
 .card__image {
