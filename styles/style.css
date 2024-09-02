@@ -93,7 +93,7 @@
   background-color: var(--accent-color, #000);
   transform: scaleX(0);
   transform-origin: 0% 50%;
-  transition:  transform 300ms;
+  transition: transform 300ms;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -114,7 +114,7 @@
   animation-direction: alternate;
 }
 
-/* ************************ new card ****************** */
+/* ************************ card ****************** */
 
 .card {
   margin-block-start: 100px;
@@ -167,48 +167,41 @@
   }
 }  */
 
-/* ************************ new card ****************** */
-
-/* .card__picture {
-  width: 100%;
-  max-width: 696px;
-  min-width: 375px;
-  position: relative;
-  border-top: 2px solid var(--accent-color);
-  border-bottom: 2px solid var(--accent-color);
-}
-.card__picture::before {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
-
-.card__picture-cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(/images/van.png);
-  background-size: cover;
-  background-position: center;
-} */
+/* ************************ button like ****************** */
 
 .card__like-button-conteiner {
   display: flex;
   justify-content: end;
+  gap: 1px;
 }
 
 .card__like-button {
   cursor: pointer;
   block-size: 38px;
   inline-size: 169px;
-  margin: 25px;
+  margin: 25px 25px 25px 0;
   background-color: var(--bg-color);
   display: flex;
   align-items: center;
   border: 0;
   padding: 0;
+  transition: box-shadow 300ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__like-button::before {
+  content: "";
+  position: absolute;
+  background-color: var(--accent-color, #000);
+  inline-size: 100%;
+  block-size: 100%;
+  transform: translate(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.card__like-button:hover::before {
+  transform: translate(0);
 }
 
 .card__like-button:focus {
@@ -232,12 +225,14 @@
   flex-grow: 1;
 }
 
-.card__icon-button-conteiner {
+/* ************************ button save ****************** */
+
+.save-button-conteiner {
   display: flex;
   justify-content: center;
 }
 
-.card__icon-button {
+.save-button {
   background-color: var(--bg-color);
   font-family: var(--accent-font);
   font-size: 14px;
@@ -250,12 +245,29 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  position: relative;
+  padding: 0;
 }
 
-.card__icon-button:focus {
+.save-button::before {
+  content: "";
+  position: absolute;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: var(--accent-color, #000);
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition: transform 500ms ease-in-out;
+}
+
+.save-button:hover::before {
+transform: scaleX(1);
+}
+
+.save-button:focus {
   outline: none;
 }
-.card__icon-button:focus-visible {
+.save-button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--accent-color);
 }
 
@@ -263,9 +275,11 @@
   inline-size: 21px;
 }
 
-.card__icon-button > .button__text {
+.save-button > .button__text {
   border: 0;
 }
+
+/* ************************ Animation ****************** */
 
 @keyframes arrow {
   from {
