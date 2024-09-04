@@ -169,6 +169,10 @@
 
 /* ************************ button like ****************** */
 
+
+
+
+
 .card__like-button-conteiner {
   display: flex;
   justify-content: end;
@@ -193,16 +197,17 @@
 .card__like-button::before {
   content: "";
   position: absolute;
+  z-index: 0;
   background-color: var(--accent-color, #000);
   inline-size: 100%;
   block-size: 100%;
   transform: translate(-100%);
-  transition: transform 5000ms ease-in-out;
-  
+  transition: transform 1000ms ease-in-out;
 }
 
 .card__like-button:hover::before {
   transform: translate(0);
+  
 }
 
 .card__like-button:focus {
@@ -219,16 +224,17 @@
 
 .button__text {
   position: relative;
+  z-index: 1;
   mix-blend-mode: difference;
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 36px;
   display: block;
   flex-grow: 1;
-  color: var(--button-text);
-  transition: mix-blend-mode 500ms;
-
+  color: var(--button-text, #fff);
+  transition: color 1000ms ease;
 }
+
 
 /* ************************ button save ****************** */
 
@@ -266,7 +272,7 @@
 }
 
 .save-button:hover::before {
-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .save-button:focus {
