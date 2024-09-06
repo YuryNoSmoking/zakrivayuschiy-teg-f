@@ -167,11 +167,55 @@
   }
 }  */
 
+/* ************************ button heart ****************** */
+
+.heart {
+
+}
+.contour {
+
+}
+.main-body {
+
+}
+.core {
+ opacity: 0;
+ transition: opacity 300ms linear;
+}
+
+
+.sparks {
+  opacity: 0;
+}
+
+
+.card__icon-button {
+  outline: none;
+ cursor: pointer;
+ block-size: 41px;
+ inline-size: 43px;
+ margin: 25px 12px;
+ padding: 0;
+ border: 2px solid transparent;
+ background-color: transparent;
+ transition: border 300ms ease;
+}
+
+.card__icon-button:hover .core {
+  opacity: 1;
+  /* transition: opacity 300ms 3000ms linear; */
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color);
+}
+
+
 /* ************************ button like ****************** */
-
-
-
-
 
 .card__like-button-conteiner {
   display: flex;
@@ -202,12 +246,11 @@
   inline-size: 100%;
   block-size: 100%;
   transform: translate(-100%);
-  transition: transform 1000ms ease-in-out;
+  transition: transform 500ms ease-in-out;
 }
 
 .card__like-button:hover::before {
-  transform: translate(0);
-  
+  transform: translate(0);  
 }
 
 .card__like-button:focus {

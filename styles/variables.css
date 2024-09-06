@@ -4,6 +4,8 @@
   --min-width: 375px;
   --font: "Inter-Variable";
   --accent-font: "PressStart2P";
+  --heart: #ff0000;
+  --core-heart: black;
 }
 
 /* проверка синхронизации 1 */
