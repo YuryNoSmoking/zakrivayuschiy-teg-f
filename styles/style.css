@@ -170,41 +170,59 @@
 /* ************************ button heart ****************** */
 
 .heart {
-
 }
 .contour {
-
 }
 .main-body {
-
+  opacity: 0;
+  transition: opacity 300ms linear;
+  transition: fill 300ms linear;
 }
+
 .core {
- opacity: 0;
- transition: opacity 300ms linear;
+  opacity: 0;
+  transition: opacity 300ms linear 30ms;
+  transition: fill 300ms linear;
 }
-
 
 .sparks {
   opacity: 0;
 }
 
-
 .card__icon-button {
   outline: none;
- cursor: pointer;
- block-size: 41px;
- inline-size: 43px;
- margin: 25px 12px;
- padding: 0;
- border: 2px solid transparent;
- background-color: transparent;
- transition: border 300ms ease;
+  cursor: pointer;
+  block-size: 41px;
+  inline-size: 43px;
+  margin: 25px 12px;
+  padding: 0;
+  border: 2px solid transparent;
+  background-color: transparent;
+
 }
 
 .card__icon-button:hover .core {
   opacity: 1;
-  /* transition: opacity 300ms 3000ms linear; */
+  transition: opacity 300ms linear;
 }
+
+.card__icon-button:hover .main-body {
+  opacity: 1;
+  transition: opacity 300ms linear 50ms;
+}
+
+.card__icon-button:active .core {
+  --core-heart: red;
+  transition: fill 300ms linear;
+}
+
+.card__icon-button:active .main-body {
+  --core-heart: red;
+  transition: fill 300ms linear;
+}
+
+
+
 
 .card__icon-button:focus {
   outline: none;
@@ -213,7 +231,6 @@
 .card__icon-button:focus-visible {
   border: 2px solid var(--accent-color);
 }
-
 
 /* ************************ button like ****************** */
 
@@ -250,7 +267,7 @@
 }
 
 .card__like-button:hover::before {
-  transform: translate(0);  
+  transform: translate(0);
 }
 
 .card__like-button:focus {
@@ -277,7 +294,6 @@
   color: var(--button-text, #fff);
   transition: color 1000ms ease;
 }
-
 
 /* ************************ button save ****************** */
 

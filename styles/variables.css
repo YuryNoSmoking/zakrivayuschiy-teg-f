@@ -5,7 +5,7 @@
   --font: "Inter-Variable";
   --accent-font: "PressStart2P";
   --heart: #ff0000;
-  --core-heart: black;
+  --core-heart: var(--accent-color);
 }
 
 /* проверка синхронизации 1 */
