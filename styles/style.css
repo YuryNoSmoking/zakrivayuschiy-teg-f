@@ -484,18 +484,17 @@ dialog::backdrop {
 
 @keyframes cat {
   from {
-    filter: drop-shadow(0 -20px 10px var(--accent-color));
+    filter: drop-shadow(0 -30px 1px var(--accent-color));
   }
 
   33% {
-    filter: drop-shadow(20px 0 10px var(--accent-color));
+    filter: drop-shadow(30px 0 1px var(--accent-color));
   }
   66% {
-    filter: drop-shadow(0 20px 10px var(--accent-color));
+    filter: drop-shadow(0 30px 1px var(--accent-color));
   }
 
   to {
-    filter: drop-shadow(-20px 0px 10px var(--accent-color));
+    filter: drop-shadow(-30px 0px 1px var(--accent-color));
   }
-  
 }
