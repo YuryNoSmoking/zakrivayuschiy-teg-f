@@ -167,6 +167,22 @@
   }
 }  */
 
+
+/* ************************ FILTERS ****************** */
+
+.dog {
+  animation: dog 30s ease infinite;
+}
+
+.dog:hover {
+  filter: brightness(2);
+}
+
+
+
+
+
+
 /* ************************ button heart ****************** */
 
 .main-body {
@@ -456,4 +472,14 @@ dialog::backdrop {
   to {
     opacity: 0;
   }
+}
+
+@keyframes dog {
+  from {
+    filter: contrast(10%);
+  }
+  to {
+    filter: contrast(100%);
+  }
+  
 }
