@@ -172,8 +172,14 @@
 
 
 .dancing-man {
-
+  /* animation: dance 4s linear infinite; */
 }
+
+.dancing-man:hover {
+  filter: blur(50);
+}
+
+
 
 .gpt {
 
@@ -204,19 +210,28 @@
 }
 
 .satisfaction {
-  
+
 }
+ @keyframes dance {
+  from {
+    filter: invert(0);
+  }
+  50% {
+    filter: invert(100%);
+  }
+
+to {
+  filter: invert(0);
+}
+
+ }
+
 
 
 /* .cat {
   filter: drop-shadow(-20px -20px 10px var(--accent-color));
   animation: cat 4s linear infinite;
 } */
-
-
-
-
-
 
 
 /* @keyframes dog {
