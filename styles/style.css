@@ -170,7 +170,6 @@
 
 /* ************************ FILTERS ****************** */
 
-
 .dancing-man {
   /* animation: dance 4s linear infinite; */
 }
@@ -179,10 +178,7 @@
   filter: blur(50);
 }
 
-
-
 .gpt {
-
 }
 
 .dog {
@@ -194,25 +190,20 @@
 }
 
 .hard {
-
 }
 
 .support {
-
 }
 
 .possible {
-
 }
 
 .soft-skill {
-
 }
 
 .satisfaction {
-
 }
- @keyframes dance {
+@keyframes dance {
   from {
     filter: invert(0);
   }
@@ -220,19 +211,15 @@
     filter: invert(100%);
   }
 
-to {
-  filter: invert(0);
+  to {
+    filter: invert(0);
+  }
 }
-
- }
-
-
 
 /* .cat {
   filter: drop-shadow(-20px -20px 10px var(--accent-color));
   animation: cat 4s linear infinite;
 } */
-
 
 /* @keyframes dog {
   from {
@@ -259,11 +246,6 @@ to {
     filter: drop-shadow(-30px 0px 1px var(--accent-color));
   }
 } */
-
-
-
-
-
 
 /* ************************ button heart ****************** */
 
@@ -554,5 +536,3 @@ dialog::backdrop {
     opacity: 0;
   }
 }
-
-
