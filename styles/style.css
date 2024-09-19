@@ -179,7 +179,6 @@
 
 }
 
-
 .dog {
   animation: dog 30s ease infinite;
 }
@@ -187,6 +186,10 @@
 .dog:hover {
   filter: brightness(2);
 }
+
+
+
+
 
 /* .cat {
   filter: drop-shadow(-20px -20px 10px var(--accent-color));
