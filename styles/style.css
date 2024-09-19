@@ -172,10 +172,12 @@
 
 
 .dancing-man {
-  
+
 }
 
+.gpt {
 
+}
 
 
 .dog {
@@ -186,10 +188,10 @@
   filter: brightness(2);
 }
 
-.cat {
+/* .cat {
   filter: drop-shadow(-20px -20px 10px var(--accent-color));
   animation: cat 4s linear infinite;
-}
+} */
 
 
 
