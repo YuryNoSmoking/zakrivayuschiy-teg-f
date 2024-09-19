@@ -170,6 +170,14 @@
 
 /* ************************ FILTERS ****************** */
 
+
+.dancing-man {
+  
+}
+
+
+
+
 .dog {
   animation: dog 30s ease infinite;
 }
@@ -182,6 +190,43 @@
   filter: drop-shadow(-20px -20px 10px var(--accent-color));
   animation: cat 4s linear infinite;
 }
+
+
+
+
+
+
+
+/* @keyframes dog {
+  from {
+    filter: contrast(10%);
+  }
+  to {
+    filter: contrast(100%);
+  }
+}
+
+@keyframes cat {
+  from {
+    filter: drop-shadow(0 -30px 1px var(--accent-color));
+  }
+
+  33% {
+    filter: drop-shadow(30px 0 1px var(--accent-color));
+  }
+  66% {
+    filter: drop-shadow(0 30px 1px var(--accent-color));
+  }
+
+  to {
+    filter: drop-shadow(-30px 0px 1px var(--accent-color));
+  }
+} */
+
+
+
+
+
 
 /* ************************ button heart ****************** */
 
@@ -473,28 +518,4 @@ dialog::backdrop {
   }
 }
 
-@keyframes dog {
-  from {
-    filter: contrast(10%);
-  }
-  to {
-    filter: contrast(100%);
-  }
-}
 
-@keyframes cat {
-  from {
-    filter: drop-shadow(0 -30px 1px var(--accent-color));
-  }
-
-  33% {
-    filter: drop-shadow(30px 0 1px var(--accent-color));
-  }
-  66% {
-    filter: drop-shadow(0 30px 1px var(--accent-color));
-  }
-
-  to {
-    filter: drop-shadow(-30px 0px 1px var(--accent-color));
-  }
-}
