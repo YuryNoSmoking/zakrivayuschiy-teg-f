@@ -10,6 +10,7 @@
   --button-text: #00cc14;
   --font-weight: 465;
   --font-weight-title: 785;
+  --invert-gif: 100%;
   --bg-image: 
     repeating-linear-gradient(to right,#000 0px 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
@@ -22,6 +23,7 @@
   --button-text: white;
   --font-weight: 400;
   --font-weight-title: 700;
+  --invert-gif: 0%;
   --bg-image: 
     repeating-linear-gradient(to right,#d3d3d3 0px 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
@@ -35,6 +37,7 @@
     --button-text: #00cc14;
     --font-weight: 465;
     --font-weight-title: 785;
+    --invert-gif: 100%;
     --bg-image: 
       repeating-linear-gradient(to right, #000 0px 2px, transparent 2px 4px),
       repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
@@ -49,6 +52,7 @@
     --button-text: white;
     --font-weight: 400;
     --font-weight-title: 700;
+    --invert-gif: 0%;
     --bg-image: 
       repeating-linear-gradient(to right,#d3d3d3 0px 2px, transparent 2px 4px),
       repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),

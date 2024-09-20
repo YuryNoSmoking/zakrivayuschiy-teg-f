@@ -127,6 +127,7 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
+  border-bottom: 2px solid var(--accent-color, #000);
 }
 
 .card__logo {
@@ -144,7 +145,7 @@
 .card__image {
   width: 100%;
   height: auto;
-  border-bottom: 2px solid var(--accent-color, #000);
+  
 }
 
 .card__title {
@@ -207,7 +208,7 @@
 }
 
 .support {
-  ddd
+  filter: invert(var(--invert-gif));
 }
 
 .possible {
