@@ -181,8 +181,14 @@
 }
 
 .gpt {
-  
+  filter: opacity(0.1);
+  transition: 1s;
 }
+
+.gpt:hover {
+  filter: opacity(1);
+}
+
 
 .dog {
   animation: dog 30s ease infinite;
