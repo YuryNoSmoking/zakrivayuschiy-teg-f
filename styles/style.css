@@ -191,11 +191,14 @@
 
 
 .dog {
-  animation: dog 30s ease infinite;
+filter:  sepia(0);
+transition: 1s;
+  /* animation: dog 30s ease infinite; */
 }
 
 .dog:hover {
-  filter: brightness(2);
+  filter:  sepia(100%);
+
 }
 
 .hard {
