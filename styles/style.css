@@ -233,7 +233,12 @@ transition: 6s linear;
 }
 
 .satisfaction {
+  filter: hue-rotate(90deg);
 }
+
+
+
+
 
 
 /* ************************ button heart ****************** */
