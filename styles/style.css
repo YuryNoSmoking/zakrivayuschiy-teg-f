@@ -171,11 +171,12 @@
 /* ************************ FILTERS ****************** */
 
 .dancing-man {
+  filter: blur(10px);
   /* animation: dance 4s linear infinite; */
 }
 
 .dancing-man:hover {
-  filter: blur(50);
+  filter: blur(0);
 }
 
 .gpt {
