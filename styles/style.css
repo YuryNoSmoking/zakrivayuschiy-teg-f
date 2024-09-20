@@ -189,19 +189,21 @@
   filter: opacity(1);
 }
 
-
 .dog {
-filter:  sepia(0);
-transition: 1s;
-  /* animation: dog 30s ease infinite; */
+  filter: sepia(0);
+  transition: 1s;
 }
 
 .dog:hover {
-  filter:  sepia(100%);
-
+  filter: sepia(100%);
 }
 
 .hard {
+  filter: grayscale(0) invert(0%);
+  transition: 1s;
+}
+.hard:hover {
+  filter: grayscale(1) invert(80%);
 }
 
 .support {
