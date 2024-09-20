@@ -171,15 +171,17 @@
 /* ************************ FILTERS ****************** */
 
 .dancing-man {
-  filter: blur(10px);
+  filter: brightness(10%);
+  transition: 1s;
   /* animation: dance 4s linear infinite; */
 }
 
 .dancing-man:hover {
-  filter: blur(0);
+  filter: brightness(80%);
 }
 
 .gpt {
+  
 }
 
 .dog {
