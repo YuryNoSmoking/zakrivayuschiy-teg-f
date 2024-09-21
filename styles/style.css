@@ -408,7 +408,7 @@
   line-height: 12.6px;
   border: 2px solid var(--accent-color);
   margin-top: 52px;
-  margin-bottom: 100px;
+  margin-bottom: 105px;
   inline-size: 335px;
   min-block-size: 51px;
   cursor: pointer;
@@ -416,7 +416,8 @@
   gap: 8px;
   align-items: center;
   position: relative;
-  padding: 0;
+  padding-right: 19px;
+  padding-left: 0;
 }
 
 .save-button::before {
