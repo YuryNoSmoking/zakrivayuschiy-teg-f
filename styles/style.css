@@ -417,8 +417,6 @@
   align-items: center;
   position: relative;
   padding: 0;
-  /* padding-right: 19px;
-  padding-left: 0; */
 }
 
 .save-button::before {
@@ -447,14 +445,14 @@
   inline-size: 21px;
   padding-left: 19px;
   flex-grow: 1;
-
 }
 
 .save-button > .button__text {
   border: 0;
- 
-  
 }
+
+
+
 /* ************************ Dialog ****************** */
 
 #dialog-id {
