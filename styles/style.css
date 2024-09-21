@@ -26,8 +26,6 @@
   max-inline-size: var(--max-width);
   min-inline-size: var(--min-width);
   margin: auto;
-
- 
 }
 
 @supports (font-variation-settings: normal) {
@@ -146,10 +144,20 @@
   mix-blend-mode: hard-light;
 }
 
+@supports (
+  (text-stroke: 1px var(--bg-color)) or
+    (-webkit-text-stroke: 1px var(--bg-color))
+) {
+  .card__logo {
+    -webkit-text-stroke: 1px var(--bg-color);
+    text-stroke: 1px var(--bg-color);
+    text-shadow: none;
+  }
+}
+
 .card__image {
   width: 100%;
   height: auto;
-  
 }
 
 .card__title {
@@ -221,14 +229,13 @@
 }
 
 .possible:hover {
-filter: blur(0);
-transition: 500ms;
+  filter: blur(0);
+  transition: 500ms;
 }
 
-
 .soft-skill {
-filter: hue-rotate(0deg);
-transition: 6s linear;
+  filter: hue-rotate(0deg);
+  transition: 6s linear;
 }
 
 .soft-skill:hover {
@@ -238,7 +245,6 @@ transition: 6s linear;
 .satisfaction {
   filter: hue-rotate(90deg);
 }
-
 
 /* ************************ button heart ****************** */
 
