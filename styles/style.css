@@ -174,19 +174,12 @@
   line-height: 21px;
 }
 
-/* @media (max-width: 375px) {
-  .card2__image {
-    width: 100%; 
-   max-width: 100%; 
-  }
-}  */
 
 /* ************************ FILTERS ****************** */
 
 .dancing-man {
   filter: brightness(10%);
   transition: 1s;
-  /* animation: dance 4s linear infinite; */
 }
 
 .dancing-man:hover {
