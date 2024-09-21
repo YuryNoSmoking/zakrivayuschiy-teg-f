@@ -25,6 +25,7 @@
   max-inline-size: var(--max-width);
   min-inline-size: var(--min-width);
   margin: auto;
+  font-variation-settings: var(--font);
 }
 
 @supports (font-variation-settings: normal) {
