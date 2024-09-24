@@ -410,6 +410,7 @@
   align-items: center;
   position: relative;
   padding: 0;
+  text-align: start;
 }
 
 .save-button::before {
