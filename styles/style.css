@@ -438,6 +438,7 @@
   inline-size: 21px;
   padding-left: 19px;
   flex-grow: 1;
+  mix-blend-mode: difference;
 }
 
 .save-button > .button__text {
