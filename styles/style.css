@@ -440,6 +440,7 @@
   padding-left: 19px;
   flex-grow: 1;
   mix-blend-mode: difference;
+  color: var(--button-text);
 }
 
 .save-button > .button__text {
