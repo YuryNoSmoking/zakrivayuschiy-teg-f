@@ -44,13 +44,23 @@
   background-color: var(--bg-color, #fff);
 }
 
-.header__title {
+.logo {
+  display: block;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   padding-top: clamp(120px, 10vw, 136px);
   padding-bottom: 20px;
   padding-left: 14px;
   padding-right: 14px;
 }
+
+
+/* .header__title {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  padding-top: clamp(120px, 10vw, 136px);
+  padding-bottom: 20px;
+  padding-left: 14px;
+  padding-right: 14px;
+} */
 
 .header__subtitle {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
@@ -499,7 +509,3 @@
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.8);
 }
-
-/* ************************ Animation ****************** */
-
-
