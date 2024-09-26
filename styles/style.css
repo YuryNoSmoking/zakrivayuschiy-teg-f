@@ -181,65 +181,65 @@
 
 /* ************************ FILTERS ****************** */
 
-.dancing-man {
+.brightness-filter {
   filter: brightness(10%);
   transition: 1s;
 }
 
-.dancing-man:hover {
+.brightness-filter:hover {
   filter: brightness(80%);
 }
 
-.gpt {
+.opacity-filter {
   filter: opacity(0.1);
   transition: 1s;
 }
 
-.gpt:hover {
+.opacity-filter:hover {
   filter: opacity(1);
 }
 
-.dog {
+.sepia-filter {
   filter: sepia(0);
   transition: 1s;
 }
 
-.dog:hover {
+.sepia-filter:hover {
   filter: sepia(100%);
 }
 
-.hard {
+.grayscale_invert-filter {
   filter: grayscale(0) invert(0%);
   transition: 1s;
 }
-.hard:hover {
+.grayscale_invert-filter:hover {
   filter: grayscale(1) invert(80%);
 }
 
-.support {
+.invert-filter  {
   filter: invert(var(--invert-gif));
 }
 
-.possible {
+.blur-filter {
   filter: blur(10px);
   transition: 10s ease-in;
 }
 
-.possible:hover {
+.blur-filter:hover {
   filter: blur(0);
   transition: 500ms;
 }
 
-.soft-skill {
+.soft-skill_hue-rotate_filter {
   filter: hue-rotate(0deg);
   transition: 6s linear;
 }
 
-.soft-skill:hover {
+.soft-skill_hue-rotate_filter:hover {
   filter: hue-rotate(360deg);
 }
 
-.satisfaction {
+.satisfaction_hue-rotate_filter {
   filter: hue-rotate(90deg);
 }
 
