@@ -29,12 +29,11 @@
   background-attachment: fixed;
 }
 
-
 .header {
   font-family: var(--accent-font), fantasy;
   border: 2px solid var(--accent-color, #000);
   text-align: center;
-  margin-top: 100px;
+
   background-color: var(--bg-color, #fff);
 }
 
@@ -170,7 +169,6 @@
   line-height: 21px;
 }
 
-
 /* ************************ FILTERS ****************** */
 
 .brightness-filter {
@@ -208,7 +206,7 @@
   filter: grayscale(1) invert(80%);
 }
 
-.invert-filter  {
+.invert-filter {
   filter: invert(var(--invert-gif));
 }
 
@@ -442,8 +440,6 @@
 .save-button > .button__text {
   border: 0;
 }
-
-
 
 /* ************************ Dialog ****************** */
 
