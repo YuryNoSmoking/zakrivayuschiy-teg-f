@@ -29,12 +29,6 @@
   background-attachment: fixed;
 }
 
-@supports (font-variation-settings: normal) {
-  .page {
-    font-family: var(--font, Arial, Helvetica, sans-serif);
-    font-variation-settings: "wght" var(--font-weight, 400);
-  }
-}
 
 .header {
   font-family: var(--accent-font);
@@ -52,8 +46,6 @@
   padding-left: 14px;
   padding-right: 14px;
 }
-
-
 
 .header__subtitle {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
