@@ -152,8 +152,7 @@
 .card__image {
   width: 100%;
   height: auto;
-  object-fit: cover; 
-  
+  object-fit: cover;
 }
 
 .card__title {
@@ -176,16 +175,13 @@
   filter: brightness(50%);
 }
 
-
 .opacity-filter {
   filter: opacity(0.5);
 }
 
-
 .sepia-filter {
   filter: sepia(100%);
 }
-
 
 .grayscale_invert-filter {
   filter: grayscale(50%) invert(10%);
@@ -200,12 +196,7 @@
 }
 
 .soft-skill_hue-rotate_filter {
-  filter: hue-rotate(0deg);
-  transition: 6s linear;
-}
-
-.soft-skill_hue-rotate_filter:hover {
-  filter: hue-rotate(360deg);
+  filter: hue-rotate(300deg);
 }
 
 .satisfaction_hue-rotate_filter {
