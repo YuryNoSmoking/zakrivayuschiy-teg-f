@@ -52,23 +52,23 @@
 }
 
 .card__icon-button:active .core {
-  --core-heart: red;
+  /* --core-heart: red; */
   transition: fill 300ms linear;
 }
 
 .card__icon-button:active .main-body {
-  --core-heart: red;
+  /* --core-heart: red; */
   transition: fill 300ms linear;
 }
 
 .like-icon.is-liked .core {
-  --core-heart: red;
+  /* --core-heart: red; */
   opacity: 1;
   transition: fill 300ms linear;
 }
 
 .like-icon.is-liked .main-body {
-  --core-heart: red;
+  /* --core-heart: red; */
   opacity: 1;
   transition: fill 300ms linear 50ms;
 }
