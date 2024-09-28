@@ -85,7 +85,6 @@
   content: "";
   display: block;
   height: 3px;
-  /* margin-top: -1px; */
   background-color: var(--accent-color, #000);
   transform: scaleX(0);
   transform-origin: 0% 50%;
@@ -153,6 +152,8 @@
 .card__image {
   width: 100%;
   height: auto;
+  object-fit: cover; 
+  
 }
 
 .card__title {
@@ -172,13 +173,12 @@
 /* ************************ FILTERS ****************** */
 
 .brightness-filter {
-  filter: brightness(10%);
-  transition: 1s;
+  filter: brightness(50%);
 }
 
-.brightness-filter:hover {
+/* .brightness-filter:hover {
   filter: brightness(80%);
-}
+} */
 
 .opacity-filter {
   filter: opacity(0.1);
