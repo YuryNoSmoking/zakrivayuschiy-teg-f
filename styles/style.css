@@ -183,13 +183,9 @@
 
 
 .sepia-filter {
-  filter: sepia(0);
-  transition: 1s;
-}
-
-.sepia-filter:hover {
   filter: sepia(100%);
 }
+
 
 .grayscale_invert-filter {
   filter: grayscale(0) invert(0%);
