@@ -188,11 +188,7 @@
 
 
 .grayscale_invert-filter {
-  filter: grayscale(0) invert(0%);
-  transition: 1s;
-}
-.grayscale_invert-filter:hover {
-  filter: grayscale(1) invert(80%);
+  filter: grayscale(50%) invert(10%);
 }
 
 .invert-filter {
@@ -200,13 +196,7 @@
 }
 
 .blur-filter {
-  filter: blur(10px);
-  transition: 10s ease-in;
-}
-
-.blur-filter:hover {
-  filter: blur(0);
-  transition: 500ms;
+  filter: blur(3px);
 }
 
 .soft-skill_hue-rotate_filter {
