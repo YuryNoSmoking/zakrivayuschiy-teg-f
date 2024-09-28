@@ -176,18 +176,11 @@
   filter: brightness(50%);
 }
 
-/* .brightness-filter:hover {
-  filter: brightness(80%);
-} */
 
 .opacity-filter {
-  filter: opacity(0.1);
-  transition: 1s;
+  filter: opacity(0.5);
 }
 
-.opacity-filter:hover {
-  filter: opacity(1);
-}
 
 .sepia-filter {
   filter: sepia(0);
