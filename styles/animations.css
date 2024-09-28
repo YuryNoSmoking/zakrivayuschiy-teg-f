@@ -43,7 +43,6 @@
 .card__icon-button:hover .core {
   opacity: 1;
   transition: opacity 300ms linear;
-  /* transition: fill 300ms linear; */
 }
 
 .card__icon-button:hover .main-body {
@@ -52,29 +51,29 @@
 }
 
 .card__icon-button:active .core {
-  /* --core-heart: red; */
+  fill: var(--sparks);
   transition: fill 300ms linear;
 }
 
 .card__icon-button:active .main-body {
-  /* --core-heart: red; */
-  transition: fill 300ms linear;
+  fill: var(--sparks);
+  transition: fill 300ms linear 30ms;
 }
 
 .like-icon.is-liked .core {
-  /* --core-heart: red; */
+  fill: var(--sparks);
   opacity: 1;
   transition: fill 300ms linear;
 }
 
 .like-icon.is-liked .main-body {
-  /* --core-heart: red; */
+  fill: var(--sparks);
   opacity: 1;
   transition: fill 300ms linear 50ms;
 }
 
 .like-icon.is-liked .contour {
-  --accent-color: red;
+  fill: var(--sparks);
   opacity: 1;
   transition: fill 300ms linear 60ms;
 }
@@ -99,35 +98,35 @@
 }
 
 @keyframes arrow {
-    from {
-      left: -10px;
-    }
-    to {
-      left: -14px;
-    }
+  from {
+    left: -10px;
   }
-  
-  @keyframes heart {
-    from {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.5);
-    }
-    to {
-      transform: scale(1);
-    }
+  to {
+    left: -14px;
   }
-  
-  @keyframes sparks {
-    from {
-      opacity: 0;
-    }
-  
-    50% {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
+}
+
+@keyframes heart {
+  from {
+    transform: scale(1);
   }
+  50% {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

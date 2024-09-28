@@ -386,7 +386,6 @@ color: var(--button-text);
   transform: scaleX(0);
   transform-origin: 0% 50%;
   transition: transform 500ms ease-in-out;
-  
 }
 
 .dialog-button:hover::before {
@@ -403,5 +402,5 @@ color: var(--button-text);
 }
 
 dialog::backdrop {
-  background-color: rgba(231, 231, 231, 1);
+  background-color: rgba(0, 0, 0, 75%);
 }

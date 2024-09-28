@@ -6,6 +6,7 @@
   --accent-font: "PressStart2P";
   --sparks: #ff0000;
   --core-heart: var(--accent-color);
+  --heart-color: red;
 }
 
 /* проверка синхронизации 1 */
