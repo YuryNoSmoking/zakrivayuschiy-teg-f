@@ -80,14 +80,14 @@
 }
 
 .like-icon.is-liked {
-  animation: heart 300ms ease-in 100ms 1;
+  animation: heart 300ms ease-in 100ms 1 alternate;
 }
 .like-icon .contour {
   transition: fill 100ms linear;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks 300ms ease-in 300ms 1;
+  animation: sparks 300ms ease-in 300ms 1 alternate;
 }
 
 .card__icon-button:focus {
