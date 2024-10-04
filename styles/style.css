@@ -59,7 +59,7 @@
 .theme-menu__list {
   display: grid;
   gap: 5px;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
   justify-items: start;
 }
 
@@ -155,8 +155,10 @@
 }
 
 .card__image {
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
+  width: 696px;
+  height: 696px;
   object-fit: cover;
 }
 
@@ -221,7 +223,7 @@
 .card__like-button {
   cursor: pointer;
   block-size: 38px;
-  inline-size: 169px;
+  inline-size: 130px;
   margin: 25px 25px 25px 0;
   background-color: var(--bg-color);
   display: flex;
