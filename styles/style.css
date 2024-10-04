@@ -170,11 +170,19 @@
   border-bottom: 2px solid var(--accent-color, #000);
 }
 
-.card__content {
+
+.card__content:first-child {
   padding: 25px 25px 27px;
+}
+
+.card__content {
+  padding: 25px 25px 27px; 
   font-size: 18px;
   line-height: 21px;
 }
+
+
+
 
 /* ************************ FILTERS ****************** */
 
