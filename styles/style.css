@@ -157,8 +157,11 @@
 .card__image {
   /* width: 100%;
   height: auto; */
-  width: 696px;
-  height: 696px;
+  /* width: 696px;
+  height: 696px; */
+  height: clamp(375px, calc(375px + 30.14vw), 696px);
+width: 100%; /* для сохранения квадратной формы */
+
   object-fit: cover;
 }
 
