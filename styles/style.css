@@ -63,6 +63,11 @@
   justify-items: start;
 }
 
+.theme-menu__item {
+  padding-inline-start: 15px;
+}
+
+
 .theme-menu__button {
   cursor: pointer;
   background-color: transparent;
