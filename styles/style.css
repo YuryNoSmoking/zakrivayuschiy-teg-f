@@ -155,7 +155,7 @@
 
 .card__image {
   height: clamp(375px, calc(375px + 30.14vw), 696px);
-  width: 100%; 
+  width: 100%;
   object-fit: cover;
 }
 
@@ -167,12 +167,8 @@
   border-bottom: 2px solid var(--accent-color, #000);
 }
 
-.card__content:first-child {
-  padding: 25px 25px 27px;
-}
-
 .card__content {
-  padding: 25px 25px 27px;
+  padding: 25px 25px 0px 27px;
   font-size: 18px;
   line-height: 21px;
 }
