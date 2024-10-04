@@ -67,7 +67,6 @@
   padding-inline-start: 15px;
 }
 
-
 .theme-menu__button {
   cursor: pointer;
   background-color: transparent;
@@ -155,13 +154,8 @@
 }
 
 .card__image {
-  /* width: 100%;
-  height: auto; */
-  /* width: 696px;
-  height: 696px; */
   height: clamp(375px, calc(375px + 30.14vw), 696px);
-width: 100%; /* для сохранения квадратной формы */
-
+  width: 100%; 
   object-fit: cover;
 }
 
@@ -173,19 +167,15 @@ width: 100%; /* для сохранения квадратной формы */
   border-bottom: 2px solid var(--accent-color, #000);
 }
 
-
 .card__content:first-child {
   padding: 25px 25px 27px;
 }
 
 .card__content {
-  padding: 25px 25px 27px; 
+  padding: 25px 25px 27px;
   font-size: 18px;
   line-height: 21px;
 }
-
-
-
 
 /* ************************ FILTERS ****************** */
 
@@ -220,8 +210,6 @@ width: 100%; /* для сохранения квадратной формы */
 .satisfaction_hue-rotate_filter {
   filter: hue-rotate(90deg);
 }
-
-
 
 /* ***************** button like *************** */
 
@@ -386,13 +374,11 @@ width: 100%; /* для сохранения квадратной формы */
   transition: box-shadow 300ms ease;
   text-transform: inherit;
   position: relative;
-
 }
 
 .dialog-button-text {
-color: var(--button-text);
+  color: var(--button-text);
   mix-blend-mode: difference;
-  
 }
 
 .dialog-button::before {
@@ -410,7 +396,6 @@ color: var(--button-text);
 .dialog-button:hover::before {
   transform: scaleX(1);
 }
-
 
 .dialog-button:focus {
   outline: none;
