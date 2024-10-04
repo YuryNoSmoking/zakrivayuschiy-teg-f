@@ -115,8 +115,12 @@
 
 /* ************************ card ****************** */
 
-.card {
+.card:first-of-type {
   margin-block-start: 100px;
+}
+
+.card {
+  margin-block-start: 50px;
   background-color: var(--bg-color, #fff);
   font-size: 18px;
   border: 2px solid var(--accent-color, #000);
