@@ -158,7 +158,12 @@
 }
 
 .card__image {
-  height: clamp(375px, calc(375px + 30.14vw), 696px);
+  height: clamp(
+    375px,
+    calc(375px + (696 - 375) * ((100vw - 375px) / (1440 - 375))),
+    696px
+  );
+
   width: 100%;
   object-fit: cover;
 }
