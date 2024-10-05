@@ -306,6 +306,20 @@
   text-align: start;
 }
 
+@media (width <= 375px) {
+  .save-button {
+    inline-size: 306px;
+    min-block-size: 80px;
+    flex-direction: column;
+  }
+.floppy {
+  
+  padding-left: 0;
+}
+
+}
+
+
 .save-button::before {
   content: "";
   position: absolute;
